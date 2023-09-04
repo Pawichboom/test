@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <title>Test Git</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>เกมบวกลบคูณหาร</title>
 </head>
-<style>
-    p{color:red}
-</style>
 <body>
-    <h1>Hello, Test Git</h1>
-    <p>This is a paragraph</p>
-    <p>This is new paragraph</p>
-    <p>This is another paragraph</p>
+    <div class="container">
+        <h1>เกมบวกลบคูณหาร</h1>
+        <div class="equation">
+            <span id="num1"></span>
+            <span id="operator"></span>
+            <span id="num2"></span>
+        </div>
+        <input type="number" id="answer" placeholder="คำตอบ">
+        <button id="check">ตรวจสอบ</button>
+        <div id="message"></div>
+        <div id="timer">เวลา: <span id="time-left">60</span> วินาที</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
